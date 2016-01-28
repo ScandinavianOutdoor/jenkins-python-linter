@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="JUnitXMLReporter" errors="0" tests="1" failures="0" time="0.5" timestamp="TIME_STAMP">
+        <testcase classname="JUnitXMLReporter" name="PEP8 check" time="0.5" />
+    </testsuite>
+</testsuites>
