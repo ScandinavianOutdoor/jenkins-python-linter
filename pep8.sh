@@ -6,8 +6,8 @@ SHA=$3
 cd $WORKSPACE
 rm junit.xml
 
-git fetch
-git checkout $SHA
+git fetch --all
+git reset --hard $SHA
 git diff --name-only origin/$BRANCH | grep \.py$ | grep -v migrations | \xargs git diff origin/$BRANCH -- | flake8 --max-line-length=99 --diff > /tmp/flake.txt
 
 junit_conversor /tmp/flake.txt junit.xml
